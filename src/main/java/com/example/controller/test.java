@@ -5,6 +5,6 @@ public class test {
     private String baseName = "base";
 
     public void callName(){
-        System.out.println(baseName);
+        System.out.println(baseName+"123");
     }
 }
