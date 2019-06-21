@@ -7,8 +7,5 @@ public class test1 extends test {
         System.out.println(baseName);
     }
 
-    public static void main(String[] args) {
-        test test = new test1();
-        test.callName();
-    }
+
 }
