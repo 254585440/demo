@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration>
-    <property name="appid" value="autoLogs" />
+    <property name="appid" value="demo" />
     <!-- 输出到文件 -->
     <appender name="FILE"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>INFO</level>
         </filter>
-        <file>/root/logs/${appid}/info.log</file>
+        <file>/logs/${appid}/info.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>/root/logs/${appid}/info.log.%d{yyyyMMdd}
+            <fileNamePattern>/logs/${appid}/info.log.%d{yyyyMMdd}
             </fileNamePattern>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
