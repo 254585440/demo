@@ -15,12 +15,13 @@ import java.util.List;
 
 @Controller
 public class IndexController {
-    private static final Logger LOGGER = LoggerFactory.getLogger(IndexController.class);
+    private static final Logger log = LoggerFactory.getLogger(IndexController.class);
     @Autowired
     private userService userS;
 
     @RequestMapping("/index")
     public String index(){
+        log.info("进入首页");
         return "selectUserInfo";
     }
 
