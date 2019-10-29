@@ -3,9 +3,6 @@ server:
 
 logging:
   config: classpath:logback-spring.xml
-  path: /root/applogs
-  level:
-    root: info
 
 spring:
   datasource:
