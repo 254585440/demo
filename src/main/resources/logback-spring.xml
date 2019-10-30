@@ -2,7 +2,7 @@
 <configuration debug="false">
     <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径 -->
     <property name="LOG_NAME" value="demo"></property>
-    <property  name="LOG_HOME" value="/root/logs"></property>
+    <property  name="LOG_HOME" value="/opt/logs"></property>
 <!--    <define  name="LOG_IP" class="com.fostar.sdk.config.LogIpConfig" />-->
 
     <!-- 控制台输出 -->
