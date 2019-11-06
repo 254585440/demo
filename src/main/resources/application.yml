@@ -20,3 +20,8 @@ spring:
       prefix: /
       suffix: .jsp
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://101.132.154.224:9500/eureka/
+
