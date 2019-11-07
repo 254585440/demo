@@ -25,3 +25,15 @@ eureka:
     service-url:
       defaultZone: http://101.132.154.224:9500/eureka/
 
+xxl:
+  job:
+    admin:
+      addresses: http://101.132.154.224:9600/xxl-job-admin/
+    executor:
+      appname: xxl-job-executor-demo
+      ip:
+      port: 33066
+      logpath: /opt/logs/demo/jobhandler
+      logretentiondays: -1
+    accessToken:
+
