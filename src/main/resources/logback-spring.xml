@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="false">
     <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径 -->
-    <property name="LOG_NAME" value="demo.log"></property>
-    <property  name="LOG_HOME" value="/opt/logs/demo"></property>
+    <property name="log.path" value="/opt/logs/demo/demo.log"/>
 <!--    <define  name="LOG_IP" class="com.fostar.sdk.config.LogIpConfig" />-->
 
     <!-- 控制台输出 -->
@@ -17,10 +16,10 @@
 
     <!-- 按照每天生成日志文件 -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-        <file>${LOG_HOME}</file>
+        <file>${log.path}</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--日志文件输出的文件名 -->
-            <FileNamePattern>${LOG_HOME}/${LOG_NAME}.%d{yyyyMMdd}.log</FileNamePattern>
+            <FileNamePattern>${log.path}.%d{yyyy-MM-dd}.log</FileNamePattern>
             <!--日志文件保留天数 -->
             <MaxHistory>30</MaxHistory>
             <MaxFileSize>200MB</MaxFileSize>
