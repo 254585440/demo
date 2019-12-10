@@ -5,6 +5,9 @@
     <title>在线尝试 Bootstrap 实例</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/layoutit.css">
+    <link href="css/css.css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/all.min.css'>
+    <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
@@ -13,42 +16,43 @@
 
     <script type="text/javascript" src="js/jquery.htmlClean.js"></script>
     <script type="text/javascript" src="js/scripts.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
-<body class="devpreview sourcepreview" style="min-height: 632px; cursor: auto;">
-    <div class="container">
+<body class="devpreview sourcepreview" style="min-height: 632px; cursor: auto;padding-top: 40px;padding-bottom: 0px">
+    <div class="container" style="padding-left: 0px;padding-right: 0px">
         <div class="row clearfix">
             <div class="col-md-12 column">
-                <ul class="nav nav-tabs">
-                    <li class="active">
-                        <a href="#">首页</a>
-                    </li>
-                    <li>
-                        <a href="#">简介</a>
-                    </li>
-                    <li class="disabled">
-                        <a href="#">信息</a>
-                    </li>
-                    <li class="dropdown pull-right">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">下拉<strong class="caret"></strong></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">操作</a>
-                            </li>
-                            <li>
-                                <a href="#">设置栏目</a>
-                            </li>
-                            <li>
-                                <a href="#">更多设置</a>
-                            </li>
-                            <li class="divider">
-                            </li>
-                            <li>
-                                <a href="#">分割线</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="carousel slide" id="carousel-728470">
+<!--                <div class="col-md-12 column" style="text-align:center">-->
+<!--                    <img src="image/default3.jpg"/>-->
+<!--                </div>-->
+<!--                <ul class="nav nav-tabs" style="background: #2a6496">-->
+<!--                    <li class="active">-->
+<!--                        <a href="#">首页</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#">简介</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#">信息</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+
+                <nav class="navigationWrapper">
+                    <div class="logoWrapper">
+                        <span class="stylish">Stylish</span>
+                        <span class="logo">Logo</span>
+                    </div>
+                    <ul class="navigation">
+                        <li class="parent"><a class="link" href="#">首页</a></li>
+                        <li class="parent"><a class="link" href="#">公司简介</a></li>
+                        <li class="parent"><a class="link" href="#">设备展示</a></li>
+                        <li class="parent"><a class="link" href="#">联系我们</a></li>
+                        <li class="parent"><a class="link" href="#">联系我们</a></li>
+                        <li class="parent"><a class="link" href="#">联系我们</a></li>
+                    </ul>
+                </nav>
+
+                <div class="carousel slide padding" id="carousel-728470">
                     <ol class="carousel-indicators">
                         <li class="active" data-slide-to="0" data-target="#carousel-728470">
                         </li>
@@ -95,7 +99,7 @@
                 </div>
             </div>
         </div>
-        <div class="row clearfix">
+        <div class="row clearfix" style="padding-right: 30px;padding-left: 30px">
             <div class="col-md-4 column">
                 <h2>
                     Heading
@@ -130,6 +134,42 @@
                 </p>
             </div>
         </div>
+        <div class="page-address">
+            <div class="col-md-12 column" style="text-align:center">
+
+            </div>
+        </div>
+        <div class="page-bottom">
+            <div class="col-md-12 column" style="text-align:center;width: 100%;">
+                Copyright © 2013-2019 菜鸟教程  runoob.com All Rights Reserved. 备案号：<a href="#">闽ICP备15012807号-1</a>
+            </div>
+        </div>
     </div>
 </body>
+<style>
+    .page-address{
+        background: #333;
+        height: 50px;
+
+    }
+    .page-bottom{
+        background-color: #222;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #222;
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+        color: white;
+        text-transform: uppercase;
+        overflow: hidden;
+        font-size: 9px;
+    }
+    .padding{
+        /*padding-left: 30px;*/
+        /*padding-right: 30px;*/
+        /*background: #fff;*/
+    }
+</style>
 </html>
