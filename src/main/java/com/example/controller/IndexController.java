@@ -20,6 +20,13 @@ public class IndexController {
     @RequestMapping("/index")
     public String index(){
         log.info("进入首页");
+        try{
+            throw new Exception("色剂佛教法ISO");
+        }catch (Exception e){
+            log.error("报错了");
+            e.printStackTrace();
+        }
+
         return "demo";
     }
 
