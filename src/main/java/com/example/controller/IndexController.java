@@ -25,7 +25,7 @@ public class IndexController {
             list.add("fsef");
         }catch (Exception e){
             log.error("报错了");
-            e.printStackTrace();
+            log.error("错误信息", e);
         }
 
         return "demo";
